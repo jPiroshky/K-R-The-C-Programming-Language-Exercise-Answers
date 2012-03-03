@@ -2,6 +2,13 @@ K&R - The C programming Language
 chapter 2 book exercises: (/bookexercises/)
 
 Exercise 1-1.  Run the "hello, world" program on your system.  Experiment with leaving out parts of the program, to see what error messages you get.
+Progress:
+Finished - (bookexercises/exercise1-1/) contains exercise1-1 and permutations.  The permutations are inspired by the error and warning messages gcc gave me while attempting to compile.
+Notes:
+Using gcc version 4.6.1 (Ubuntu/Linaro 4.6.1-9ubuntu3) 
+Complied with command: gcc -Wall -c "%f"
+It was really very interesting to see what is acceptable to gcc, and what it asks for when lines are unnacceptable.  Especially by doing 'bogus debugging' - acting on suggestions from compiler error and warning messages in a way that you know will be unnacceptable - one can start to get a feel for how the complier 'sees' a program.
+
 
 Exercise 1-2.  Experiment to find out what happens when prints's argument string contains \c, where c is some character not listed above.
 
