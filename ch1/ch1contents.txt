@@ -11,6 +11,10 @@ It was really very interesting to see what is acceptable to gcc, and what it ask
 
 
 Exercise 1-2.  Experiment to find out what happens when prints's argument string contains \c, where c is some character not listed above.
+Progress:
+Finished
+Notes:
+Prints the escape sequences from section 2.3 and one unknown escape sequence.
 
 Exercise 1-3.  Modify the termperature conversion program to print a heading above the table.
 
