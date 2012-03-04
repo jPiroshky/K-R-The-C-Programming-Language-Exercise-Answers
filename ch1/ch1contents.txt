@@ -77,5 +77,8 @@ Exercise 1-22.  Write a program to "fold" long input lines into two or more shor
 Exercise 1-23.  Write a program to remove all comments from a C program.  Don't forget to handle quoted strings and character constants properly.  C comments don't nest.
 
 Exercise 1-24.  Write a program to check a C program for rudimentary syntax errors like unmatched parentheses, brackets and braces.  Don't forget about quotes, both single and double, escape sequences, and comments. (This program is hard if you do it in full generality.)
-	
-	
+
+
+Personal Exercises:
+
+exercise1-8_v1.c - I wanted to understand why my exercise1-8.c only prints to output once EOF is reached, while my exercise1-9.c prints to output after every newline character is input, so I created exercise1-8_v1.c that also copies its input to output.  I believe the printing of output on receiving a newline is related to the terminal's behavior rather than something specific to the c language.
