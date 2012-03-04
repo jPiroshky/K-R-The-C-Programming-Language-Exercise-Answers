@@ -1,4 +1,6 @@
-These are my answers to the Richie and Kernighan The C Programming Language exercises, and also my project to learn git.  The proposed solutions are arranged by chapter, and each chapter has a .txt file that states the problems along with my progress and notes.  Also included for each chapter are my own exploratory programs inspired by the material.
+These are my answers to the Richie and Kernighan The C Programming Language exercises, and also my project to learn git.  The proposed solutions are arranged by chapter, and each chapter has a .txt file that states the problems along with my progress and notes.  Also included for each chapter are my own exploratory programs inspired by the material, each including a statement of purpose and a conclusion.
+
+By building this repo, I hope to not only learn great C programming practices, but also to leave an artifact that may some day help build lesson plans to assist other students,
 
 -John Pierce Parker ^_^
-jpiroshky@gmail.com
+ jpiroshky@gmail.com
