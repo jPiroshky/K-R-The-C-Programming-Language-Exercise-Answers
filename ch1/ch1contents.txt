@@ -21,8 +21,12 @@ Progress:
 Complete
 
 Exercise 1-4.  Write a program to print the corresponding Celsius to Fahrenheit table.
+Progress:
+Complete
 
 Exercise 1-5.  Modify the termperature conversion program to print the table in reverse order, that is, from 300 degrees to 0.
+Progress:
+Complete
 
 Exercise 1-6.  Verify that the expression getchar() != EOF is 0 or 1.
 

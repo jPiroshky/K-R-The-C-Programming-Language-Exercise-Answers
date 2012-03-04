@@ -10,10 +10,10 @@ main()
 	
 	lower = -20;
 	upper = 160;
-	step = 20;
+	step = 10;
 	celsius = lower;
 	
-	printf ("Celsius to Fahrenheit table:\n");
+	printf("Celsius-Fahrenheit table:\n");
 	
 	while(celsius <= upper) {
 		fahr = (celsius * 9.0 / 5.0) + 32.0;
