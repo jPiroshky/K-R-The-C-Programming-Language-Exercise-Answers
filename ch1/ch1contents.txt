@@ -42,8 +42,11 @@ Complete
 Exercise 1-8.  Write a program to count blanks, tabs, and newlines.
 Progress:
 Complete
+Notes: I wanted to understand why my exercise1-8.c only prints to output once EOF is reached, while my exercise1-9.c prints to output after every newline character is input, so I created exercise1-8_v1.c that also copies its input to output.  I believe the printing of output on receiving a newline is related to the terminal's behavior rather than something specific to the c language.
 
 Exercise 1-9.  Write a program to copy its input to its output, replacing each string of one or more blanks by a single blank.
+Progress:
+Complete
 
 Exercise 1-10.  Write a program to copy its input to its output, replacing each tab by \t, each backspace by \b, and each backslash by \\.  This makes tabs and backspaces visible in an unambiguous way.
 
