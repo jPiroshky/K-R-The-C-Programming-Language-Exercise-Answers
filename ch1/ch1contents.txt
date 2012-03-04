@@ -29,6 +29,11 @@ Progress:
 Complete
 
 Exercise 1-6.  Verify that the expression getchar() != EOF is 0 or 1.
+Progress:
+Complete
+Notes:
+This program is an infinite loop that takes characters from the std. input and prints a 0 for an EOF character, and 1 for every other character.  
+ * Note: Must use ^c or kill to terminate *
 
 Exercise 1-7.  Write a program to print the value of EOF.
 
