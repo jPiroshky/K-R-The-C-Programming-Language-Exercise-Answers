@@ -1,0 +1,31 @@
+exercise1-11.c - the wc program
+exercise1-11_v1.c - the wc program modified to copy input to output so as to make it easier to see the results of the tests
+exercise1-11_v2.c - exercise1-11_v1.c modified to handle backspaces
+
+Files of the name wctest*.in are test cases for the word count problem and are to be passed to exercise1-11 or exercise1-11_v1.c as standard input.  The contents of each file are listed below:
+
+wctest1.in
+''
+
+wctest2.in
+' '
+
+wctest3.in
+' \n
+ '
+
+wctest4.in
+'mis space'
+
+wctest5.in
+'^H'
+
+wctest6.in
+' ^H'
+
+wctest7.in
+' \n
+^H '
+
+wctest8.in
+'mis ^Hspace'

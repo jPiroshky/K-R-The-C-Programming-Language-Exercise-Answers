@@ -53,6 +53,10 @@ Progress:
 Complete
 
 Exercise 1-11.  How would you test the word count program?  What kinds of input are the most likely to uncover bugs if there are any?
+Progress:
+Complete
+Notes:
+Files of the naming convention wctest*.in are intended to be passed to exercise1-11.c, exercise1-11_v1.c and exercise 1-11_v2.c as input.  Both variations of exercise1-11.c are intended to highlight how the wc program handles unexpected input.
 
 Exercise 1-12.  Write a program that prints its input one word per line.
 
@@ -88,3 +92,12 @@ Purpose:
 I wanted to understand why my exercise1-8.c only prints to output once EOF is reached, while my exercise1-9.c prints to output after every newline character is input, so I created exercise1-8_v1.c that also copies its input to output.  I believe the printing of output on receiving a newline is related to the terminal's behavior rather than something specific to the c language.
 Conclusion:
 When using getchar() in a loop, the first character is only recieved after it is sent from the standard input, so in the case of running exercise1-8.c or exercise1-9.c with standard input from the terminal, the program only 'sees' input once the first newline is entered on the terminal, and is otherwise 'waiting' at the test condition at the top of the loop.  So, a program like exercise1-8.c is really tallying the target characters as it recieves each new line of input, and since it has not recieved an EOF, it waits for the next input.  A program like exercise1-9 is also 'waiting' for input, but as it recieves the new line, the program goes through the loop until input is EOF or it is 'waiting' for input again, and on each iteration prints the current character, effectively printing the whole line, \n and all, before it is 'waiting' again.  This also explains why entering characters at the terminal and then giving a single ^d before typing a newline character will mirror the input to the output without advancing the standard output to a new line; ^d sends the input to the program from the terminal, and then the output is immediatly sent and displayed on the standard output, and the program continues to 'wait' for input because it did not recieve an EOF character - only the terminal recieved an EOF character.  Therefore, entering ^d again or at the beginning of new input will end the program because this causes the terminal to send an EOF character to the c program and the program at last 'sees' the EOF character, effectively falsifying the loop condition and then reaching the end of the program.  Truly, the question I should have asked is not 'why does exercise1-9 print output after recieving a newline character' but instead, 'why do I not print character tallying information from exercise1-8 until I am done with the loop that takes characters from the standard input'.
+
+exercise1-11_v1.c - the wc program modified to copy its input to its output.  This makes it easier to see the results of unexpected input.
+Purpose:
+To show what happens to the stream of text in files wctest5.in through wctest8.in when processed by exercise1-11.c
+
+exercise1-11_v2.c - the wc program modified to copy its input to its output, and to exhibit some intelligent behavior when given a backspace character in input.  The solution below may still have some bugs, as wctest5.in produces a negative character count as output, which may or may not be unexpected or undesired behavior depending on what you are using wc for.
+Purpose:
+To demonstrate how a program like exercise1-11.c can be modified to handle new kinds of input that may have been producing unexpected or undesired behavior in the original program.
+
