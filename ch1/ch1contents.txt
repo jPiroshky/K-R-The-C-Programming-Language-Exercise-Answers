@@ -61,6 +61,8 @@ Notes:
 Files of the naming convention wctest*.in are intended to be passed to exercise1-11.c, exercise1-11_v1.c and exercise 1-11_v2.c as input.  Both variations of exercise1-11.c are intended to highlight how the wc program handles unexpected input.
 
 Exercise 1-12.  Write a program that prints its input one word per line.
+Progress:
+Complete
 
 Exercise 1-13.  Write a program to print a histogram of the lengths of words in its input.  It is easy to draw the histogram with the bars horizontal; a vertical orientation is more challenging.
 
