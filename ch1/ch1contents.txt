@@ -71,6 +71,10 @@ Notes:
 Could be improved with an automatic maximum-word-length detection, intelligent table sizing upon print, and excluding punctuation from count.
 
 Exercise 1-14.  Write a program to print a histogram of the frequencies of different characters in its input.
+Progress:
+Complete
+Notes:
+Prints with histogram bars horizontal for ease of reading.  Only prints a row if the count for that character was greater than 0.  Could be improved to indicate the different control characters when printing the graph key (especially the space and the newline characters).  exercise1-14_v1.c prints in its key a character for every character in the set from 0 to 127.
 
 Exercise 1-15.  Rewrite the temperature conversion program of Section 1.2 to use a function for conversion.
 
@@ -112,4 +116,10 @@ To show what happens to the stream of text in files wctest5.in through wctest8.i
 exercise1-11_v2.c - the wc program modified to copy its input to its output, and to exhibit some intelligent behavior when given a backspace character in input.  The solution below may still have some bugs, as wctest5.in produces a negative character count as output, which may or may not be unexpected or undesired behavior depending on what you are using wc for.
 Purpose:
 To demonstrate how a program like exercise1-11.c can be modified to handle new kinds of input that may have been producing unexpected or undesired behavior in the original program.
+
+exercise1-14_v1.c - (this version prints a key with every character in the set from 0 to 127) prints a histogram of the frequencies of the characters given as input.  Prints with histogram bars horizontal for ease of reading.  Could be improved to indicate the different control characters when printing the graph key (especially the space and the newline characters)
+Purpose:
+To print all of the characters in the character set from 0 to 127
+Conclusion:
+This is not difficult to do, and there are many characters that have no intelligible graphical representation.
 
