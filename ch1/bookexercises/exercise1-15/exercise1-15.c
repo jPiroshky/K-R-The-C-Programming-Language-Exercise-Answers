@@ -4,8 +4,6 @@
 #define UPPERLIMIT	300
 #define STEP		20
 
-/* a function for converting fahrenheit to celsius */
-
 /* ftoc(): takes an int in fahrenheit, returns an int in celsius */
 int ftoc(int fahr);
 
