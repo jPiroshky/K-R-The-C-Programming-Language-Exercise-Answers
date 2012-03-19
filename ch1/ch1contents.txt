@@ -129,7 +129,7 @@ To print all of the characters in the character set from 0 to 127
 Conclusion:
 This is not difficult to do, and there are many characters that have no intelligible graphical representation.
 
-printinitchararray.c - declares a character array of 'LINELENGTH' elements, and then prints the content of the array before the array is initialized 
+printuninitchararray.c - declares a character array of 'LINELENGTH' elements, and then prints the content of the array before the array is initialized 
 Purpose: To see the contents of an unitialized character array.
 Conclusion: The array prints what is stored in the memory before the program is run, and so can be different every time the program is run
 
