@@ -6,8 +6,11 @@
  * 
  * Purpose:
  * to see the result of printing a string with characters after a null
- * character*/
- 
+ * character
+ * 
+ * Conclusion:
+ * If a string is printed using printf("%s", string), then only
+ * characters before the first null character are printed. */
  int main()
  {
 	//define and print the initial string
