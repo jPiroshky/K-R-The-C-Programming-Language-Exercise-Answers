@@ -11,7 +11,8 @@
  * Earlier, I didn't give proper credit for the ideas I used in this
  * program.  User Name:'s post on
  * http://cboard.cprogramming.com/c-programming/127683-computing-max-min-values-numeric-variables-ints-chars-etc.html
- * was the first method I used to approach this problem. */
+ * was the first method I used to approach this problem, and was very
+ * important for me to get my start. */
 int main(void)
 {
 	//print values from limits.h
