@@ -14,5 +14,13 @@ Progress:
 Exercise 2-3.  Write a function htoi(s), which converts a string of hexadecimal digits (including an optional 0x or 0X) into its equivalent integer value.  The allowable digits are 0 through 9, a through f, and A through F.
 Progress:
 Finished.
-	
+
+Personal Exercises:
+
+fastintrange.c - a fast algorithm for directly computing limits of basic integer data types 
+Purpose:
+To find a method faster than adding one to compute the integer ranges.  Especially the unsigned long long, which is 64 bit on my machine and has never finished using the incremental method ^_^.  I am also hope these kinds of ideas will be applicable to computing the floating point ranges as well.
+Conclusion:
+This method is very fast, and takes advantage of the way the machine represents these numbers to itself.  In fact, I learned a lot about manipulating numbers in various bases.
+
 	
