@@ -5,6 +5,8 @@ Exercise 2-1.  Write a program to determine the ranges of char, short, int, and 
 Progress:
 sucessful: -print basic int data type limits from limits.h and by computation
 to do: -compute and list limits of floating-point types.
+Credits:
+Earlier, I didn't give proper credit for the ideas I used in this program.  User Name:'s post on http://cboard.cprogramming.com/c-programming/127683-computing-max-min-values-numeric-variables-ints-chars-etc.html was the first method I used to approach this problem, and was very important for me to get my start.
 
 Exercise 2-2.  Write a loop equivalent to the for loop above without using && or ||.
 Progress:

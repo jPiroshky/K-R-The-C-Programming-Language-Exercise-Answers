@@ -2,10 +2,16 @@
 #include <limits.h>
 
 /* exercise2-1.c - Write a program to determine the ranges of char,
-short, int, and long variables, both signed and unsigned, by printing
-appropriate values form standard headers and by direct computation.
-Harder if you compute them: determine the ranges of the various
-floating-point types. */
+ * short, int, and long variables, both signed and unsigned, by printing
+ * appropriate values form standard headers and by direct computation.
+ * Harder if you compute them: determine the ranges of the various
+ * floating-point types. 
+ * 
+ * Credits:
+ * Earlier, I didn't give proper credit for the ideas I used in this
+ * program.  User Name:'s post on
+ * http://cboard.cprogramming.com/c-programming/127683-computing-max-min-values-numeric-variables-ints-chars-etc.html
+ * was the first method I used to approach this problem. */
 int main(void)
 {
 	//print values from limits.h
