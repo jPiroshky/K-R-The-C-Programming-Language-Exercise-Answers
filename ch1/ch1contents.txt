@@ -95,6 +95,11 @@ Notes:
 deltrailblanks() is generalized to strings, even those without newline characters.
 
 Exercise 1-19.  Write a function reverse(s) that reverses the character string s.  Use it to write a program that reverses its input a line at a time.
+Progress:
+Complete
+Notes:
+reversestring() is generalized to all strings.
+Also, I've only tested this on my secondary machine, and it takes two ^d's to convince the program to ngetline(), reverse, and print.  This is not familiar behavior (usually only one ^d) for me, and I need to test it on my primary machine and look for bugs. 
 
 Exercise 1-20.  Write a program detab that replaces tabs in the input with the proper number of blanks to space to the next tab stop.  Assume a fixed set of tab stops, say every n columns.  Should n be a variable or a symbolic parameter?
 
