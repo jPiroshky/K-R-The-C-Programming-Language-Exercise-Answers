@@ -15,6 +15,10 @@ Exercise 2-3.  Write a function htoi(s), which converts a string of hexadecimal 
 Progress:
 Finished.
 
+Exercise 2-4.  Write an alternative version of squeeze(s1,s2) that deletes each character in s1 that matches any character in the string s2.
+Progress:
+Complete.
+
 Personal Exercises:
 
 fastintrange.c - a fast algorithm for directly computing limits of basic integer data types 
