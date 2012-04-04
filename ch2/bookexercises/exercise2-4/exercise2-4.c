@@ -33,6 +33,7 @@ int main()
 	
 	return 0;
 }
+
 /* squeeze() - deletes from s1[] any characters in s2[]. Each char in 
  * s1 is compared against chars in s2 until match, and if match, then 
  * s1[]'s read position is advanced relative to its write position.*/ 

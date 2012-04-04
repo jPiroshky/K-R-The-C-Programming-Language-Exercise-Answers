@@ -19,6 +19,13 @@ Exercise 2-4.  Write an alternative version of squeeze(s1,s2) that deletes each 
 Progress:
 Complete.
 
+Exercise 2-5.  Write the function any(s1, s2), which returns the first location in a string s1 where any character from the string s2 occurs, or -1 if s1 contains no characters from s2. (The standard library function strpbrk does the same job but returns a pointer to the location.)
+NOTE:
+When testing this program, you must use ^d with no newline character to pass the second line from the terminal to the program, or else you will always match the newline character in the first line with the newline character from the second, and never recieve a value of -1 for no match.
+Progress:
+Complete.
+
+
 Personal Exercises:
 
 fastintrange.c - a fast algorithm for directly computing limits of basic integer data types 
