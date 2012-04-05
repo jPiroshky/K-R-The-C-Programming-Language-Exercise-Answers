@@ -64,20 +64,11 @@ int any(char s1[], char s2[])
 			//and if a character matches
 			if (s1[cursor_s1] == s2[cursor_s2])
 			{
-				ismatch = 1;
+				//return the cursor_s1 position of the match
+				return cursor_s1;
 			}
 		}
-		
-		//then return the cursor_s1 position of the match
-		if (ismatch)
-		{
-			return cursor_s1;
-		}
-		//else, advance cursor_s1
-		else
-		{
-			++cursor_s1;
-		}
+		++cursor_s1;
 	}
 	
 	//after traversing s1, return -1 if no match
