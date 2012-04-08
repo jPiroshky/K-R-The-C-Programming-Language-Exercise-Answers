@@ -13,7 +13,16 @@
  * terms in a recursively additive sequence, and the speed at which this
  * convergence occurs.  To create the Fibonacci sequence enter 1 and then
  * 1 as the initial terms, and to create the Lucas sequence enter 3 and
- * then 1. */
+ * then 1. 
+ * 
+ * Purpose:
+ * To demonstrate some of the properties of recursively additive
+ * sequences.
+ * 
+ * Conclusion:
+ * These properties can be demonstrated easily, and if you vary the
+ * precision of the floating point calculation, you can observe the
+ * behavior of floation point numbers of different sizes. */
 int main()
 {
 	long long unsigned int a, b, c;
