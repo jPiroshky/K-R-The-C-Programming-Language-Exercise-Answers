@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #define MAXLINE 1000  /* maximum input line length */
+
 unsigned setbits(unsigned x, int p, int n, unsigned y);
 
 /* exercise2-6 - Write a function setbits(x,p,n,y) that returns x with
@@ -46,6 +47,8 @@ int main()
 	return 0;
 }
 
+/* setbits() - set the n bits of variable x starting at position p to 
+ * the first n bits (rightmost n bits) of variable y. */
 unsigned setbits(unsigned x, int p, int n, unsigned y)
 {	
 	/* set active bits in x to 0, then apply mask with active bits in y
