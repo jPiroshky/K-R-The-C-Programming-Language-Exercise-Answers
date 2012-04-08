@@ -44,4 +44,9 @@ To find a method faster than adding one to compute the integer ranges.  Especial
 Conclusion:
 This method is very fast, and takes advantage of the way the machine represents these numbers to itself.  In fact, I learned a lot about manipulating numbers in various bases.
 
-	
+recursiveadditionratios.c - a simple program that asks the user for two initial values, and creates a recursively additive sequence where each term in the series is the sum of the two terms that preceeded it, like the Fibonacci and Lucas sequences.  For each term in the created series, the index is printed, along with the previous two terms, and the ratio of those two numbers.  This program is suitable for demonstrating the convergence of the ratios between successive terms in a recursively additive sequence, and the speed at which this convergence occurs.  To create the Fibonacci sequence enter 1 and then 1 as the initial terms, and to create the Lucas sequence enter 3 and then 1.
+Purpose:
+To demonstrate some of the properties of recursively additive sequences.
+Conclusion:
+These properties can be demonstrated easily, and if you vary the precision of the floating point calculation, you can observe the behavior of floation point numbers of different sizes.
+
