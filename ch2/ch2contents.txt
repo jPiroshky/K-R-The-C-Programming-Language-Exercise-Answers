@@ -52,3 +52,9 @@ To demonstrate some of the properties of recursively additive sequences.
 Conclusion:
 These properties can be demonstrated easily, and if you vary the precision of the floating point calculation, you can observe the behavior of floation point numbers of different sizes.
 
+rshiftwordlengthtest.c - a program that implements numuintbits(), a function that returns the number of bits in an unsigned int
+Purpose:
+to find a way to find a way not to assume the word length of an integer in function rightrot(x, n) in exercise2-8
+Conclusion:
+I haven't yet found a way to find the number of bits in an integer at runtime that doesen't involve a test variable and a loop, but the solution demonstrated by this program is very simple and efficient, though it uses a variable and loop.  This program also inspires a more efficient method to find the range of integer types than I proposed in fastintrange.c 
+
