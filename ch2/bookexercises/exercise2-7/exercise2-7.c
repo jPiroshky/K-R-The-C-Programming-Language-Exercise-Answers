@@ -3,7 +3,7 @@
 
 #define MAXLINE 1000  /* maximum input line length */
 
-unsigned setbits(unsigned x, int p, int n, unsigned y);
+unsigned invert(unsigned x, int p, int n);
 
 /* exercise2-7 - Write a function invert(x,p,n) that returns x with the
  * n bits that begin at position p set to the rightmost n bits of y,
