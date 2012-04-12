@@ -17,7 +17,7 @@ int numuintbits();
  * This program does not need to assume the word lenght of an integer
  * on the executing system due to a runtime test that costs a variable
  * and a loop, which could use a better solution.  This program
- * inspired the programs rshiftwordlengthtest.c and fasterintrange.c. */
+ * inspired the programs rshiftwordlengthtest.c and bitwiseintrange.c. */
 int main()
 {
 	char numstring[MAXLINE];

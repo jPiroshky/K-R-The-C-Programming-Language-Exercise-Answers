@@ -37,7 +37,7 @@ Complete
 
 Exercise 2-8.  Write a function rightrot(x,n) that returns the value of the integer x rotated to the right by n positions.
 NOTES:
-This program does not need to assume the word lenght of an integer on the executing system due to a runtime test that costs a variable and a loop, which could use a better solution.  This program inspired the programs rshiftwordlengthtest.c and fasterintrange.c.
+This program does not need to assume the word lenght of an integer on the executing system due to a runtime test that costs a variable and a loop, which could use a better solution.  This program inspired the programs rshiftwordlengthtest.c and bitwiseintrange.c.
 Progress:
 Complete
 
@@ -59,5 +59,11 @@ rshiftwordlengthtest.c - a program that implements numuintbits(), a function tha
 Purpose:
 to find a way to find a way not to assume the word length of an integer in function rightrot(x, n) in exercise2-8
 Conclusion:
-I haven't yet found a way to find the number of bits in an integer at runtime that doesen't involve a test variable and a loop, but the solution demonstrated by this program is very simple and efficient, though it uses a variable and loop.  This program also inspires a more efficient method to find the range of integer types than I proposed in fastintrange.c 
+I haven't yet found a way to find the number of bits in an integer at runtime that doesen't involve a test variable and a loop, but the solution demonstrated by this program is very simple and efficient, though it uses a variable and loop.  This program also inspires a more efficient method to find the range of integer types than I proposed in fastintrange.c
+
+bitwiseintrange.c - a program that uses bit operations to quickly construct the maximum value of an unsigned integer, and also the maximum and minimum values of an integer.  Assumes a two's complement machine.
+Purpose:
+to find the minimum and maximum values of an integer type using few steps, no loops, and without the use of the math library
+Conclusion:
+this is a really low cost way to determine the minimum and maximum values of an integer type at runtime on a two's complement machine
 
