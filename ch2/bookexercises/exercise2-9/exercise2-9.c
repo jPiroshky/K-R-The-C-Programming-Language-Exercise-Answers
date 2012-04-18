@@ -54,7 +54,7 @@ int main(void)
  
 /* bitcount() - takes an unsigned integer x, and returns the number of
  * turned-on bits in x.  This is a faster bitcount modified to use the
- * expression proposed in exercise2-9. */
+ * expression proposed in exercise2-9. (Explanation above) */
 int bitcount(unsigned x)
 {
 	int b;

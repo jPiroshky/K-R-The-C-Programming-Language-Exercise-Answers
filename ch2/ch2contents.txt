@@ -48,7 +48,8 @@ Progress:
 Complete 
 
 Exercise 2-10.  Rewrite the function lower, which converts upper case letter to lower case, with a conditional expression instead of if-else.
-
+Progress:
+Complete
 
 
 
