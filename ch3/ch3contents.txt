@@ -1,0 +1,11 @@
+K&R - The C programming Language
+chapter 3 book exercises: (bookexercises/)
+
+Exercise 3-1.  Our binary search makes two tests inside the loop, when one would suffice (at the price of more tests outside.)  Write a version with only one test inside the loop and measure the difference in run-time.
+Progress:
+Incomplete
+-my modified algorithm works for both cases (target in the search set, and target not in the search set)
+-my textbook algorithm does not terminate in some cases in which the target value is not in the search set.  Two such known cases are when v[0] < x < v[1] and when v[n/2] < x < v[(n/2)+1)].
+-my bash script (./runtimetest.sh) works, but only prints results of the 'time' bash command for each trial, and does not yet aggregate and analyze the data across trials.
+NOTES:
+Included is a script (./runtimetest.sh) that will prompt the user for the number of time trials to run, and then display the results for both exercise3-1.c and exercise3-1_vtextbook.c in the same output.
