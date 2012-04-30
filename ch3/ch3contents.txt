@@ -9,3 +9,7 @@ Incomplete
 -my bash script (./runtimetest.sh) works, but only prints results of the 'time' bash command for each trial, and does not yet aggregate and analyze the data across trials.
 NOTES:
 Included is a script (./runtimetest.sh) that will prompt the user for the number of time trials to run, and then display the results for both exercise3-1.c and exercise3-1_vtextbook.c in the same output.
+
+Personal Exercises:
+
+shellprint.c - a simple program to output the result of each operation of the shellsort algorithm on an array

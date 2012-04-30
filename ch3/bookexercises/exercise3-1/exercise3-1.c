@@ -45,15 +45,11 @@ int main(void)
 int binsearch(int x, int v[], int n)
 {
 	int low, high, mid;
-//	int iteration;
-	
-//	iteration = 0;
 	
 	low = 0;
 	high = n - 1;
 	//while low < high (terminates when low == high)
 	while (low < high) {
-//		printf("iteration: %d\n", ++iteration);
 		mid = (low+high)/2;
 		//if x is greater than v[mid], exclude v[mid] from the next set
 		if (x > v[mid])

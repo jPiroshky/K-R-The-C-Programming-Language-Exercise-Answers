@@ -41,14 +41,10 @@ int main(void)
 int binsearch(int x, int v[], int n)
 {
 	int low, high, mid;
-//	int iteration;
-	
-//	iteration = 0;
 	
 	low = 0;
 	high = n - 1;
 	while (low <= high) {
-//		printf("iteration: %d\n", ++iteration);
 		mid = (low+high)/2;
 		if (x < v[mid])
 			high = mid + 1;
