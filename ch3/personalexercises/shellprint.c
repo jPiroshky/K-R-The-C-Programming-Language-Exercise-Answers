@@ -23,7 +23,6 @@ int main()
 				temp = v[j];
 				v[j] = v[j+gap];
 				v[j+gap] = temp;
-				
 				//print array
 				printf("\n");
 				for (cursor = 0; cursor < ARRAY_SIZE; cursor++)
