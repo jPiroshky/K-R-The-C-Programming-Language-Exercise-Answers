@@ -10,6 +10,11 @@ Incomplete
 NOTES:
 Included is a script (./runtimetest.sh) that will prompt the user for the number of time trials to run, and then display the results for both exercise3-1.c and exercise3-1_vtextbook.c in the same output.
 
+Exercise 3-2.  Write a function escape(s,t) that converts characters like newline and tab into visible escape sequences like \n and \t as it copies the string t to s.  Use a switch.  Write a function for the other direction as well, converting escape sequences into the real characters.
+Progress:
+Complete
+NOTE: use test_escape.in found in the exercise3-2 folder to test exercise3-2_escape.c, and see that all of the control characters have been transformed into their escape sequences.  Then you can use the resulting file to test exercise3-2_deescape.c, and verify that the result of deescape() is identical to test_escape.in.
+
 Personal Exercises:
 
 shellprint.c - a simple program to output the result of each operation of the shellsort algorithm on an array
