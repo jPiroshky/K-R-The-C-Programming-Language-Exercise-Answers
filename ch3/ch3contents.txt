@@ -22,6 +22,10 @@ NOTE:
 This program could be modified to allow for series of expansions, as in a-c-e-g-i, for example.  Currently -a-z and a-z- do not expand.
 
 Exercise 3-4.  In a two's complement number representation, our version of itoa does not handle the largest negative number, that is, the value of n equal to -(2^(wordsize-1)).  Explain why not.  Modify it to print that value correctly, regardless of the machine on which it runs.
+Progress:
+Complete
+Explanation:
+The textbook version of itoa() does not handle the largest negative number in a two's complement representation because of the truncation that occurs when you set n = -n.  If n is a negative number, its leftmost bit, the sign bit, is turned on, and the rest of the bits are all inverted and one less from what they would be in their positive representation.  Therefore, a statement like n = -n will always truncate the largest negative number, because that number (all digits following the sign bit set to one), if one is to disregard the sign bit and take the rest as representing a positive number, becomes a number that is the maximum for its wordsize and one less than the absolute value of the original negative n.
 
 Exercise 3-5.  Write the function itob(n,s,b) that converts the integer n into a base b character representation in the string s.  In particular, itob(n,s,16) formats s as a hexadecimal integer in s.
 
