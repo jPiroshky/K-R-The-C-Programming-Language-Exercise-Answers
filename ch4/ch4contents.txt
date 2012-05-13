@@ -5,6 +5,30 @@ Exercise 4-1.  Write the function strindex(s,t) which returns the position of th
 Progress:
 Complete
 
+Exercise 4-2.  Extend atof to handle scientific notation of the form 123.45e-6, where a floating-point number may be followed by e or E and an optionally signed exponent.
+Progress:
+Complete
+exercise4-2_main.c - rudimentary calculator.  Implements the modified atof() (natof()) outlined in exercise4-2.
+Other Project Files:
+exercise4-2_natof.c - a function natof().  Convert string s to double.  This natof is modified to extend atof to handle scientific notation of the form 123.45e-6, where a floating-point number may be followed by e or E and an optionally signed exponent, as per exercise4-2. 
+exercise4-2_ngetline.c - a function ngetline().  Get line into s, return length
+
+Exercise 4-3.  Given the basic framework, it's straightforward to extend the calculator.  Add the modulus (%) operator and provisions for negative numbers.
+
+Exercise 4-4.  Add the commands to print the top elements of the stack without popping, to duplicate it, and to swap the top two elements.  Add a command to clear the stack.
+
+Exercise 4-5.  Add access to library functions like sin, exp, and pow.  See <math.h> in Appendix B, Section 4.
+
+Exercise 4-6.  Add commands for handling variables.  (It's easy to provide twenty-six variables with single-letter names.)  Add a variable for the most recently printed value.
+
+Exercise 4-7  Write a routine ungets(s) that will push back an entire string onto the input.  Should ungets know about buf and bufp, or should it just use ungetch?
+
+Exercise 4-8.  Suppose that there will never be more than one character of pushback.  Modify getch and ungetch accordingly.
+
+Exercise 4-9.  Our getch and ungetch do not handle a pushed-back EOF correctly.  Decide what their properties ought to be if an EOF is pushed back, then implement your design.
+
+Exercise 4-10.  An alternate organization uses getline to read an entire input line; this makes getch and ungetch unnecessary.  Revise the calculator to use this approach.
+
 
 Personal Exercises:
 
