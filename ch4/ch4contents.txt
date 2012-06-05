@@ -10,10 +10,12 @@ Progress:
 Complete
 exercise4-2_main.c - rudimentary calculator.  Implements the modified atof() (natof()) outlined in exercise4-2.
 Other Project Files:
-exercise4-2_natof.c - a function natof().  Convert string s to double.  This natof is modified to extend atof to handle scientific notation of the form 123.45e-6, where a floating-point number may be followed by e or E and an optionally signed exponent, as per exercise4-2. 
+exercise4-2_natof.c - a function natof().  Convert string s to double.  This natof is modified to extend atof to handle scientific notation of the form 123.45e-6, where a floating-point number may be followed by e or E and an optionally signed exponent, as per exercise4-2.
 exercise4-2_ngetline.c - a function ngetline().  Get line into s, return length
 
 Exercise 4-3.  Given the basic framework, it's straightforward to extend the calculator.  Add the modulus (%) operator and provisions for negative numbers.
+Progress:
+Complete
 
 Exercise 4-4.  Add the commands to print the top elements of the stack without popping, to duplicate it, and to swap the top two elements.  Add a command to clear the stack.
 

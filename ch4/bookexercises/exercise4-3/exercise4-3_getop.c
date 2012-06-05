@@ -14,9 +14,19 @@ int getop(char s[])
 	while ((s[0] = c = getch()) == ' ' || c == '\t')
 		;
 	s[1] = '\0';
-	if (!isdigit(c) && c != '.')
-		return c;            /* not a number */
 	i = 0;
+	if (!isdigit(c) && c != '.' && c != '-')
+		return c;            /* not a number or '-' sign/op */
+	if (c == '-' && isspace(c = getch()))    /* get new char into c */
+	{
+		ungetch(c);
+		return '-';          /* a subtraction operator */
+	}
+	else if (s[0] == '-')
+	{
+		s[1] = c;           /* a negative number */
+		i = 1;
+	}
 	if (isdigit(c))          /* collect integer part */
 		while (isdigit(s[++i] = c = getch()))
 			;
