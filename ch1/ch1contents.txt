@@ -102,6 +102,8 @@ reversestring() is generalized to all strings.
 Also, I've only tested this on my secondary machine, and it takes two ^d's to convince the program to ngetline(), reverse, and print.  This is not familiar behavior (usually only one ^d) for me, and I need to test it on my primary machine and look for bugs. 
 
 Exercise 1-20.  Write a program detab that replaces tabs in the input with the proper number of blanks to space to the next tab stop.  Assume a fixed set of tab stops, say every n columns.  Should n be a variable or a symbolic parameter?
+Progress:
+Complete
 
 Exercise 1-21.  Write a program entab that replaces strings of blanks byt the minimum number of tabs and blanks to achieve the same spacing.  Use the same tab stops as for detab.  When either a tab or a single blank would suffice to reach a tab stop, which should be given preference?
 
