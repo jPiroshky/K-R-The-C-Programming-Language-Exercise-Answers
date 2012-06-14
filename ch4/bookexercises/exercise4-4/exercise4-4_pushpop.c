@@ -3,7 +3,7 @@
 
 #define MAXVAL	100  /* maximum depth of val stack */
 
-int sp = 0;	     /* maximum depth of val stack */
+int sp = 0;	         /* depth of val stack (next written index) */
 double val[MAXVAL];  /* value stack */
 
 /* push: push f onto value stack */
@@ -27,13 +27,13 @@ double pop(void)
 	}
 }
 
-/* prnt() - print the stack from last */
+/* prnt() - print the stack from bottom to top*/
 void prnt()
 {
 	int i;
 	
 	printf("values on stack: ");
-	for (i = sp - 1; i >= 0; i--)
+	for (i = 0; i < sp; i++)
 	{
 		printf("%g ", val[i]);
 	}
@@ -49,6 +49,26 @@ void duplicate()
 	{
 		val[i + sp] = val[i];
 	}
-	
 	sp *= 2;
+}
+
+/* swap() - swap the top two elements of the stack */
+void swap()
+{
+	double temp;
+	if (sp > 2)
+	{
+		temp = val[sp-1];
+		val[sp-1] = val[sp-2];
+		val[sp-2] = temp;
+	}
+	else
+		printf("error: there are less than two values on the stack\n");
+}
+
+/* clear() - clears the stack */
+void clear()
+{
+	sp = 0;
+	printf("stack cleared\n");
 }

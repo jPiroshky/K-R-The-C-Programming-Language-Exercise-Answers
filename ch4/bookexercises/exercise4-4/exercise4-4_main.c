@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>  /* for atof() */
+#include <string.h>  /* for strcmp() */
 #include "exercise4-4_globals.h"
 
 #define MAXOP 100  /* max size of operand or operator */
@@ -7,6 +8,10 @@
 int getop(char []);
 void push(double);
 double pop(void);
+void prnt();
+void duplicate();
+void clear();
+
 
 /* reverse Polish calculator */
 int main()
@@ -14,9 +19,10 @@ int main()
 	int type;
 	double op2;
 	char s[MAXOP];
-	int ispop;     /* when 0, the last elemnt will not be popped upon newline */
+	int ispop;     /* when 0, a value from the stack will not be popped upon newline */
 	
 	ispop = 1;
+	
 	while ((type = getop(s)) != EOF)
 	{
 		switch (type)
@@ -49,11 +55,14 @@ int main()
 					printf("error: zero divisor\n");
 				break;
 			case '\n':
-				if (ispop = 1)
+				if (ispop == 0)
+				{
+					ispop = 1;
+				}
+				else
 				{
 					printf("\t%.8g\n", pop());
 				}
-				ispop = 1;
 				break;
 			case SYMBOL:
 				if (strcmp(s, "print") == 0)
@@ -64,6 +73,16 @@ int main()
 				else if (strcmp(s, "duplicate") == 0)
 				{
 					duplicate();
+					ispop = 0;
+				}
+				else if (strcmp(s, "swap") == 0)
+				{
+					swap();
+					ispop = 0;
+				}
+				else if (strcmp(s, "clear") == 0)
+				{
+					clear();
 					ispop = 0;
 				}
 				else
