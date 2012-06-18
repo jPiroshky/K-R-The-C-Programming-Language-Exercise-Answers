@@ -45,6 +45,9 @@ int main()
 			case NUMBER:
 				push(atof(s));
 				break;
+			case ERROR:
+				printf("%s", s);
+				break;
 			case '+':
 				push(pop() + pop());
 				break;
@@ -80,12 +83,12 @@ int main()
 				}
 				break;
 			case SYMBOL:
+				/* stack commands */
 				if (strcmp(s, "print") == 0)
 				{
 					prnt();
 					ispop = 0;
 				}
-				/* stack commands */
 				else if (strcmp(s, "duplicate") == 0)
 				{
 					duplicate();

@@ -1,4 +1,5 @@
 #include <ctype.h>
+#include <string.h>
 #include "exercise4-6_globals.h"
 
 #define EOF -1
@@ -28,16 +29,24 @@ int getop(char s[])
             else
                 return c;              /* an operator, not a symbol, number or a '-' sign/op */
         }           
+        
+        /* if '-', yeild operator, negative number, or error */
         if (c == '-' && isspace(c = getch()))    /* get new char into c */
         {
                 ungetch(c);
                 return '-';          /* a subtraction operator */
         }
-        else if (s[0] == '-')
+        else if (s[0] == '-' && (isdigit(c) || c == '.'))
         {
                 s[1] = c;           /* a negative number */
                 i = 1;
         }
+        else
+        {
+			strcpy(s, "error: only a number may be negative, not a symbol or operator\n");
+			return ERROR;
+		}
+		
         if (isdigit(c))          /* collect integer part */
                 while (isdigit(s[++i] = c = getch()))
                         ;
