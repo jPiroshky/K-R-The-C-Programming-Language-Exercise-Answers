@@ -4,7 +4,7 @@
 #define BUFSIZE 100
 
 char buf[BUFSIZE];   /* bufer for ungetch */
-int bufp = 0;	     /* next free position in buf */
+int bufp = 0;        /* next free position in buf */
 
 int getch(void)    /* get a (possibly pushed-back) character */
 {
