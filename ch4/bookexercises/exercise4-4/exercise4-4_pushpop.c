@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "exercise4-4_globals.h"
 
-#define MAXVAL	100  /* maximum depth of val stack */
+#define MAXVAL  100  /* maximum depth of val stack */
 
-int sp = 0;	         /* depth of val stack (next written index) */
+int sp = 0;          /* next open position on val stack */
 double val[MAXVAL];  /* value stack */
 
 /* push: push f onto value stack */
@@ -27,48 +27,47 @@ double pop(void)
 	}
 }
 
-/* prnt() - print the stack from bottom to top*/
+/* prnt: print values on stack from bottom to top */
 void prnt()
 {
 	int i;
 	
 	printf("values on stack: ");
-	for (i = 0; i < sp; i++)
+	for (i = 0; i <= sp - 1; i++)
 	{
 		printf("%g ", val[i]);
 	}
 	printf("\n");
 }
 
-/* duplicate() - duplicate the stack */
+/* duplicate: duplicate top value on stack */
 void duplicate()
 {
-	int i;
-	
-	for (i = 0; i < sp; i++)
-	{
-		val[i + sp] = val[i];
-	}
-	sp *= 2;
+	if (sp == 0)
+		printf("error: stack empty, can't duplicate\n");
+	else if (sp < MAXVAL)
+		val[sp] = val[sp++ - 1];
+	else
+		printf("error: stack full, can't duplicate %g\n", val[sp - 1]);
 }
 
-/* swap() - swap the top two elements of the stack */
+/* swap: swap the top two elements on the stack */
 void swap()
 {
-	double temp;
-	if (sp > 2)
+	double tempval;
+	
+	if (sp > 1)
 	{
-		temp = val[sp-1];
-		val[sp-1] = val[sp-2];
-		val[sp-2] = temp;
+		tempval = val[sp - 1];
+		val[sp - 1] = val[sp - 2];
+		val[sp - 2] = tempval;
 	}
 	else
-		printf("error: there are less than two values on the stack\n");
+		printf("error: can't swap - not two elements on stack\n");
 }
 
-/* clear() - clears the stack */
+/* clear: clear the stack */
 void clear()
 {
 	sp = 0;
-	printf("stack cleared\n");
 }
